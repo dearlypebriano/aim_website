@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Aim</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- Font Awesome for icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-pzNf+M9u38z+NYB/gIatfeWLafDEqP8lFdmQXqQzBfQXYCSctua9l7S9WMVVp9kjJz9tYVBO2ezKD/2ggl1NWg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <style>
+        .profile_me {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.1);
+            margin: 50px;
+            width: 80%;
+            max-width: 580px;
+            background-color: #f9f9f9;
+        }
+
+        .img_profile {
+            margin-right: 20px;
+        }
+
+        .img_profile img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .profile_text {
+            text-align: left;
+            flex: 1;
+        }
+
+        .name_profile,
+        .desc_profile,
+        .link_profile {
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box; /* Include padding and border in the total width/height */
+            width: 100%;
+        }
+
+        .name_profile h4,
+        .desc_profile p,
+        .link_profile p {
+            font-weight: bold;
+            margin: 0;
+            overflow: hidden; /* Hide overflowing text */
+            text-overflow: ellipsis;
+        }
+
+        .no_telphov {
+            color: black;
+        }
+
+        .no_telphov:hover {
+            color: blue;
+        }
+
+        .it {
+            color: red;
+            font-style: italic;
+        }
+
+        .dev {
+            color: blue;
+            font-style: italic;
+        }
+
+        .github {
+            color: black;
+        }
+
+        .github:hover {
+            color: blue;
+        }
+
+        /* Media queries untuk layar kecil */
+        @media screen and (max-width: 600px) {
+            .profile_me {
+                width: 81%; /* Sesuaikan lebar untuk layar kecil */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .profile_text {
+                text-align: center;
+                margin-top: 10px
+            }
+            .name_profile {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a href="#" class="navbar-brand">Moch Aziz Arifudin</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" aria-disabled="true"
+                    >Contact</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Profile Admin -->
+<div class="profile_me">
+    <div class="img_profile">
+        <img
+            src="https://th.bing.com/th/id/R.fa0ca630a6a3de8e33e03a009e406acd?rik=UOMXfynJ2FEiVw&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2ff%2fa%2f0%2fc%2f1434020125875430376profile.png&ehk=73x7A%2fh2HgYZLT1q7b6vWMXl86IjYeDhub59EZ8hF14%3d&risl=&pid=ImgRaw&r=0"
+            alt="Profile"
+        />
+    </div>
+    <div class="profile_text">
+        <h3>Profile</h3>
+        <div class="name_profile">
+            <h4>
+                Name: Moch Aziz Arifudin <span class="it">IT</span>
+            </h4>
+        </div>
+        <div class="desc_profile">
+            <p>
+                Job: Learn Code <span class="dev">Website</span>
+            </p>
+        </div>
+        <div class="link_profile">
+            <p>
+                Contact:
+                <a class="no_telphov" href="https://wa.me/6288227193898"
+                >+628822719398</a
+                >
+            </p>
+        </div>
+        <div class="link_profile">
+            <p>
+                Github:
+                <a class="github" href="https://github.com/sdiosadsio"
+                >Moch Aziz A.</a
+                >
+            </p>
+        </div>
+    </div>
+</div>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+></script>
+</body>
+</html>
